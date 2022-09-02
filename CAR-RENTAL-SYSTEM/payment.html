@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lora:wght@500&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Payment Details</h1>
+        <div class="first-row">
+            <div class="card-number">
+                <h3>CARD NUMBER</h3>
+                <div class="input-field">
+                    <input placeholder="Enter Card Number" data-mask="0000 0000 0000 0000" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="holder">
+                <h3>CARD HOLDER</h3>
+                <div class="input-field">
+                    <input placeholder="Enter Card Holder Name" type="text">
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input placeholder="Enter CVV" data-mask="000" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h4>EXPIRY DATE</h4>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+                    <select name="years" id="years">
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                        <option value="2033">2033</option>
+                        <option value="2034">2034</option>
+                        <option value="2035">2035</option>
+                        <option value="2036">2036</option>
+                        <option value="2037">2037</option>
+                        <option value="2038">2038</option>
+                        <option value="2039">2039</option>
+                        <option value="2040">2040</option>
+                    </select>
+                </div>
+                <div class="cards">
+                    <img src="MasterCard.png" alt="MasterCard">
+                    <img src="PayPal.png" alt="PayPal">
+                    <img src="Visa.png" alt="Visa">
+                </div>
+            </div>
+        </div>
+        <a href="">Make Payment</a>
+    </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</body>
+
+</html>
